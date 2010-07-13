@@ -1,0 +1,16 @@
+nl:
+  admin:
+    refinerycms_wikis:
+      index:
+        create_new: Maak een nieuwe Refinerycms Wiki
+        reorder: Wijzig de volgorde van de Refinerycms Wikis
+        reorder_done: Klaar met het wijzingen van de volgorde van de Refinerycms Wikis
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen refinerycms_wikis. Druk op 'Maak een nieuwe Refinerycms Wiki' om de eerste aan te maken.
+      singular_name:
+        view_live: Bekijk deze refinerycms wiki op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze refinerycms wiki
+        delete: Verwijder deze refinerycms wiki voor eeuwig
+  refinerycms_wikis:
+    show:
+      other: Andere Refinerycms Wikis

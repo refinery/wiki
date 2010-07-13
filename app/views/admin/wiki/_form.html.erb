@@ -1,0 +1,25 @@
+<% form_for [:admin, @refinerycms_wiki] do |f| -%>
+  <%= f.error_messages %>
+  
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger' -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :body -%>
+    <%= f.text_area :body, :rows => 20, :class => 'wymeditor widest' -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :category_id -%>
+    <%= f.text_field :category_id -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :version -%>
+    <%= f.text_field :version -%>
+  </div>
+  
+  <%= render :partial => "/shared/admin/form_actions", :locals => {:f => f, :continue_editing => false} %>
+<% end -%>

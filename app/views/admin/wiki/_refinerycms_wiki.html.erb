@@ -1,0 +1,16 @@
+<li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(refinerycms_wiki) -%>">
+  <span class='title'>
+    <%=h refinerycms_wiki.title %>
+    <span class="preview">&nbsp;</span>
+  </span>
+  <span class='actions'>
+    <%= link_to refinery_icon_tag("application_go.png"), refinerycms_wiki_url(refinerycms_wiki),
+        :title => t('.view_live'),
+        :target => "_blank" %>
+    <%= link_to refinery_icon_tag("application_edit.png"), edit_admin_refinerycms_wiki_path(refinerycms_wiki),
+         :title => t('.edit') %>
+    <%= link_to refinery_icon_tag("delete.png"), admin_refinerycms_wiki_path(refinerycms_wiki),
+        :class => "cancel confirm-delete",
+        :title => t('.delete') %>
+  </span>
+</li>

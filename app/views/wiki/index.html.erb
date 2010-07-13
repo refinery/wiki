@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="refinerycms_wikis">
+    <% @refinerycms_wikis.each do |refinerycms_wiki| %>
+      <li>
+        <%= link_to refinerycms_wiki.title, refinerycms_wiki_url(refinerycms_wiki) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>
